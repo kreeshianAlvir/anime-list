@@ -1,0 +1,47 @@
+.anime-cont {
+  display: flex;
+  justify-content: center;
+  padding: 0px 25px;
+
+  .anime-view {
+    position: relative;
+    width: 100%;
+    padding: 25px;
+    background-color: #868282b6;
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+
+    .anime-details {
+      color: #fff;
+
+      .MuiTypography-root {
+        text-align: start;
+      }
+    }
+
+    & > * {
+      flex-grow: 1;
+      align-self: center;
+    }
+
+    button {
+      position: absolute;
+      background-color: rgb(54, 54, 54);
+      color: #fff;
+
+      &:first-child {
+        left: -20px;
+      }
+      &:last-child {
+        right: -20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .anime-view {
+    flex-wrap: wrap-reverse;
+  }
+}
